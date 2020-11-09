@@ -4,7 +4,7 @@
 
 
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('template/img/home-bg.jpg')">
+<header class="masthead" style="background-image: url(`{{ asset('template/img/home-bg.jpg') }}`)">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -36,7 +36,7 @@
           on {{$datareal->datetime}}</p>
         <hr>
         <p class="card-text">{!!($datareal->content) !!}</p>
-        <a class="btn btn-secondary" href="http://sib.pbf.ilkom.unej.ac.id/182410101093/uts/public/" class="card-link">Kembali</a>
+        <a class="btn btn-secondary" href="/" class="card-link">Kembali</a>
       </div>
       <hr>
       </div>
