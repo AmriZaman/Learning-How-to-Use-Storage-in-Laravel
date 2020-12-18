@@ -13,7 +13,7 @@
           <h1>Article Page</h1>
           <span class="subheading">"Sudahkah kalian membaca hari ini?"</span>
           <br>
-          <a class="btn btn-primary" href="{{route('artikel.create')}}">Buat Artikel &rarr;</a>
+          <a class="btn btn-primary" href="{{route('article.create')}}">Buat Artikel &rarr;</a>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@
           <h1>Article Page</h1>
           <span class="subheading">"Sudahkah kalian membaca hari ini?"</span>
           <br>
-          <a class="btn btn-primary" href="{{route('artikel.create')}}">Buat Artikel &rarr;</a>
+          <a class="btn btn-primary" href="{{route('article.create')}}">Buat Artikel &rarr;</a>
         </div>
       </div>
     </div>
@@ -36,9 +36,9 @@
           <a href="#">{{$d->author}}</a>
           on {{$d->datetime}}</p>
         <hr>
-        <p class="card-text">{!! Str::words($d->content) !!}<a href="{{route('artikel.show',$d->title)}}">Lihat Selengkapnya</a></p>
-        <a class="btn btn-warning" href="{{route('artikel.edit',$d->title)}}" class="card-link">Ubah</a>
-        <form style="display:inline-block" action="{{route('artikel.destroy',$d->title)}}" method="POST"><input type="hidden" name="_method" value="delete">{{csrf_field()}}<button type="submit" class="btn btn-danger">Hapus</button></form>
+        <p class="card-text">{!! Str::words($d->content) !!}<a href="{{route('article.show',$d->title)}}">Lihat Selengkapnya</a></p>
+        <a class="btn btn-warning" href="{{route('article.edit',$d->title)}}" class="card-link">Ubah</a>
+        <form style="display:inline-block" action="{{route('article.destroy',$d->title)}}" method="POST"><input type="hidden" name="_method" value="delete">{{csrf_field()}}<button type="submit" class="btn btn-danger">Hapus</button></form>
       </div>
       <hr>
       <br>
