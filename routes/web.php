@@ -15,5 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/','artikel');
-Route::resource('artikel','artikel');
+// Route::resource('/','artikel');
+// Route::resource('artikel','artikel');
+Route::resource('/','ArticleController');
+Route::resource('article','ArticleController');
